@@ -1,0 +1,6 @@
+framework module Pods_UCL_E_Testing {
+  umbrella header "Pods-UCL_E-Testing-umbrella.h"
+
+  export *
+  module * { export * }
+}

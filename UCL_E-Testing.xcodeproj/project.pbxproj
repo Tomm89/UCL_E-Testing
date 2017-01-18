@@ -12,9 +12,24 @@
 		E202D32F1E2C1CE000CD8F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E202D32D1E2C1CE000CD8F85 /* Main.storyboard */; };
 		E202D3311E2C1CE000CD8F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E202D3301E2C1CE000CD8F85 /* Assets.xcassets */; };
 		E202D3341E2C1CE000CD8F85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E202D3321E2C1CE000CD8F85 /* LaunchScreen.storyboard */; };
+		E223E0A41E2DF7C300A0A633 /* UCL_Logo_var1_clr1_RGB.png in Resources */ = {isa = PBXBuildFile; fileRef = E223E0A31E2DF7C300A0A633 /* UCL_Logo_var1_clr1_RGB.png */; };
+		E28369861E2E547300410414 /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28369851E2E547300410414 /* Answers.swift */; };
+		E283698A1E2E5B7D00410414 /* MyAnswers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28369891E2E5B7D00410414 /* MyAnswers.swift */; };
+		E28369901E2F5EED00410414 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E283698F1E2F5EED00410414 /* Login.swift */; };
+		E28369921E2F716E00410414 /* LearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28369911E2F716E00410414 /* LearningView.swift */; };
+		E28369941E2F84D100410414 /* Courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28369931E2F84D100410414 /* Courses.swift */; };
+		E28369961E2FB00500410414 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28369951E2FB00500410414 /* Texts.swift */; };
+		E28369981E2FB89300410414 /* Verification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28369971E2FB89300410414 /* Verification.swift */; };
+		E2CA86A81E2CC52100B36F0A /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA86A71E2CC52100B36F0A /* MyTableViewCell.swift */; };
+		E2CA86AB1E2CC7AA00B36F0A /* TestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA86AA1E2CC7AA00B36F0A /* TestsViewController.swift */; };
+		E2CA86AF1E2CF41100B36F0A /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA86AE1E2CF41100B36F0A /* ResultsViewController.swift */; };
+		E2CA86B11E2CFF4600B36F0A /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA86B01E2CFF4600B36F0A /* Subject.swift */; };
+		F7E0C75C929BBCA4A7563FA7 /* Pods_UCL_E_Testing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DCEBA116CD4B17F788DDF8 /* Pods_UCL_E_Testing.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24B3B9702E8EFFB6110533B7 /* Pods-UCL_E-Testing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCL_E-Testing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UCL_E-Testing/Pods-UCL_E-Testing.debug.xcconfig"; sourceTree = "<group>"; };
+		B4DFA07B69AFB623E569F31D /* Pods-UCL_E-Testing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCL_E-Testing.release.xcconfig"; path = "Pods/Target Support Files/Pods-UCL_E-Testing/Pods-UCL_E-Testing.release.xcconfig"; sourceTree = "<group>"; };
 		E202D3261E2C1CE000CD8F85 /* UCL_E-Testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UCL_E-Testing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E202D3291E2C1CE000CD8F85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E202D32B1E2C1CE000CD8F85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +37,19 @@
 		E202D3301E2C1CE000CD8F85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E202D3331E2C1CE000CD8F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E202D3351E2C1CE000CD8F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E223E0A31E2DF7C300A0A633 /* UCL_Logo_var1_clr1_RGB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UCL_Logo_var1_clr1_RGB.png; path = ../../UCL_Logo_var1_clr1_RGB.png; sourceTree = "<group>"; };
+		E28369851E2E547300410414 /* Answers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Answers.swift; path = ../Answers.swift; sourceTree = "<group>"; };
+		E28369891E2E5B7D00410414 /* MyAnswers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAnswers.swift; sourceTree = "<group>"; };
+		E283698F1E2F5EED00410414 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		E28369911E2F716E00410414 /* LearningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningView.swift; sourceTree = "<group>"; };
+		E28369931E2F84D100410414 /* Courses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Courses.swift; sourceTree = "<group>"; };
+		E28369951E2FB00500410414 /* Texts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
+		E28369971E2FB89300410414 /* Verification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Verification.swift; sourceTree = "<group>"; };
+		E2CA86A71E2CC52100B36F0A /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		E2CA86AA1E2CC7AA00B36F0A /* TestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestsViewController.swift; sourceTree = "<group>"; };
+		E2CA86AE1E2CF41100B36F0A /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		E2CA86B01E2CFF4600B36F0A /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		F6DCEBA116CD4B17F788DDF8 /* Pods_UCL_E_Testing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UCL_E_Testing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +57,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E0C75C929BBCA4A7563FA7 /* Pods_UCL_E_Testing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A78A519CFB132BBEC0AE2BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6DCEBA116CD4B17F788DDF8 /* Pods_UCL_E_Testing.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		198C9F8C0F3A4BAFC04BED5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24B3B9702E8EFFB6110533B7 /* Pods-UCL_E-Testing.debug.xcconfig */,
+				B4DFA07B69AFB623E569F31D /* Pods-UCL_E-Testing.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E202D31D1E2C1CE000CD8F85 = {
 			isa = PBXGroup;
 			children = (
 				E202D3281E2C1CE000CD8F85 /* UCL_E-Testing */,
 				E202D3271E2C1CE000CD8F85 /* Products */,
+				198C9F8C0F3A4BAFC04BED5C /* Pods */,
+				0A78A519CFB132BBEC0AE2BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +102,34 @@
 		E202D3281E2C1CE000CD8F85 /* UCL_E-Testing */ = {
 			isa = PBXGroup;
 			children = (
+				E2CA86A91E2CC76300B36F0A /* model */,
 				E202D3291E2C1CE000CD8F85 /* AppDelegate.swift */,
 				E202D32B1E2C1CE000CD8F85 /* ViewController.swift */,
+				E28369911E2F716E00410414 /* LearningView.swift */,
+				E283698F1E2F5EED00410414 /* Login.swift */,
+				E2CA86AE1E2CF41100B36F0A /* ResultsViewController.swift */,
+				E2CA86AA1E2CC7AA00B36F0A /* TestsViewController.swift */,
+				E28369971E2FB89300410414 /* Verification.swift */,
 				E202D32D1E2C1CE000CD8F85 /* Main.storyboard */,
 				E202D3301E2C1CE000CD8F85 /* Assets.xcassets */,
 				E202D3321E2C1CE000CD8F85 /* LaunchScreen.storyboard */,
+				E223E0A31E2DF7C300A0A633 /* UCL_Logo_var1_clr1_RGB.png */,
 				E202D3351E2C1CE000CD8F85 /* Info.plist */,
 			);
 			path = "UCL_E-Testing";
+			sourceTree = "<group>";
+		};
+		E2CA86A91E2CC76300B36F0A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E28369851E2E547300410414 /* Answers.swift */,
+				E2CA86A71E2CC52100B36F0A /* MyTableViewCell.swift */,
+				E2CA86B01E2CFF4600B36F0A /* Subject.swift */,
+				E28369891E2E5B7D00410414 /* MyAnswers.swift */,
+				E28369931E2F84D100410414 /* Courses.swift */,
+				E28369951E2FB00500410414 /* Texts.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E202D3381E2C1CE000CD8F85 /* Build configuration list for PBXNativeTarget "UCL_E-Testing" */;
 			buildPhases = (
+				610E6DDD7E70614251F89D91 /* [CP] Check Pods Manifest.lock */,
 				E202D3221E2C1CE000CD8F85 /* Sources */,
 				E202D3231E2C1CE000CD8F85 /* Frameworks */,
 				E202D3241E2C1CE000CD8F85 /* Resources */,
+				474297DF910DE0D38F333792 /* [CP] Embed Pods Frameworks */,
+				8832415D542659DD161E30C7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +167,7 @@
 				TargetAttributes = {
 					E202D3251E2C1CE000CD8F85 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8Z9Q2C694P;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E202D3341E2C1CE000CD8F85 /* LaunchScreen.storyboard in Resources */,
+				E223E0A41E2DF7C300A0A633 /* UCL_Logo_var1_clr1_RGB.png in Resources */,
 				E202D3311E2C1CE000CD8F85 /* Assets.xcassets in Resources */,
 				E202D32F1E2C1CE000CD8F85 /* Main.storyboard in Resources */,
 			);
@@ -131,13 +204,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		474297DF910DE0D38F333792 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UCL_E-Testing/Pods-UCL_E-Testing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		610E6DDD7E70614251F89D91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8832415D542659DD161E30C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UCL_E-Testing/Pods-UCL_E-Testing-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E202D3221E2C1CE000CD8F85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E28369981E2FB89300410414 /* Verification.swift in Sources */,
+				E28369861E2E547300410414 /* Answers.swift in Sources */,
 				E202D32C1E2C1CE000CD8F85 /* ViewController.swift in Sources */,
 				E202D32A1E2C1CE000CD8F85 /* AppDelegate.swift in Sources */,
+				E28369941E2F84D100410414 /* Courses.swift in Sources */,
+				E283698A1E2E5B7D00410414 /* MyAnswers.swift in Sources */,
+				E2CA86AB1E2CC7AA00B36F0A /* TestsViewController.swift in Sources */,
+				E28369961E2FB00500410414 /* Texts.swift in Sources */,
+				E2CA86AF1E2CF41100B36F0A /* ResultsViewController.swift in Sources */,
+				E28369901E2F5EED00410414 /* Login.swift in Sources */,
+				E2CA86B11E2CFF4600B36F0A /* Subject.swift in Sources */,
+				E28369921E2F716E00410414 /* LearningView.swift in Sources */,
+				E2CA86A81E2CC52100B36F0A /* MyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +390,12 @@
 		};
 		E202D3391E2C1CE000CD8F85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24B3B9702E8EFFB6110533B7 /* Pods-UCL_E-Testing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8Z9Q2C694P;
 				INFOPLIST_FILE = "UCL_E-Testing/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "unicorn.UCL-E-Testing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,9 +405,12 @@
 		};
 		E202D33A1E2C1CE000CD8F85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4DFA07B69AFB623E569F31D /* Pods-UCL_E-Testing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8Z9Q2C694P;
 				INFOPLIST_FILE = "UCL_E-Testing/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "unicorn.UCL-E-Testing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +437,7 @@
 				E202D33A1E2C1CE000CD8F85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
