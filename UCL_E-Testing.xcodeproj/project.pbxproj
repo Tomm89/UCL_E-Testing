@@ -24,6 +24,9 @@
 		E2CA86AB1E2CC7AA00B36F0A /* TestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA86AA1E2CC7AA00B36F0A /* TestsViewController.swift */; };
 		E2CA86AF1E2CF41100B36F0A /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA86AE1E2CF41100B36F0A /* ResultsViewController.swift */; };
 		E2CA86B11E2CFF4600B36F0A /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA86B01E2CFF4600B36F0A /* Subject.swift */; };
+		E2D79DCC1E30BD90005E0AA8 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D79DCB1E30BD90005E0AA8 /* CollectionViewController.swift */; };
+		E2D79DD11E30C73A005E0AA8 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D79DD01E30C73A005E0AA8 /* Course.swift */; };
+		E2D79DD31E30ECE7005E0AA8 /* CourseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D79DD21E30ECE7005E0AA8 /* CourseCollectionViewCell.swift */; };
 		F7E0C75C929BBCA4A7563FA7 /* Pods_UCL_E_Testing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DCEBA116CD4B17F788DDF8 /* Pods_UCL_E_Testing.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +52,9 @@
 		E2CA86AA1E2CC7AA00B36F0A /* TestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestsViewController.swift; sourceTree = "<group>"; };
 		E2CA86AE1E2CF41100B36F0A /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		E2CA86B01E2CFF4600B36F0A /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		E2D79DCB1E30BD90005E0AA8 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		E2D79DD01E30C73A005E0AA8 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		E2D79DD21E30ECE7005E0AA8 /* CourseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCollectionViewCell.swift; sourceTree = "<group>"; };
 		F6DCEBA116CD4B17F788DDF8 /* Pods_UCL_E_Testing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UCL_E_Testing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,13 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				E2CA86A91E2CC76300B36F0A /* model */,
+				E2D79DCD1E30BD98005E0AA8 /* Controllers */,
 				E202D3291E2C1CE000CD8F85 /* AppDelegate.swift */,
-				E202D32B1E2C1CE000CD8F85 /* ViewController.swift */,
-				E28369911E2F716E00410414 /* LearningView.swift */,
-				E283698F1E2F5EED00410414 /* Login.swift */,
-				E2CA86AE1E2CF41100B36F0A /* ResultsViewController.swift */,
-				E2CA86AA1E2CC7AA00B36F0A /* TestsViewController.swift */,
-				E28369971E2FB89300410414 /* Verification.swift */,
 				E202D32D1E2C1CE000CD8F85 /* Main.storyboard */,
 				E202D3301E2C1CE000CD8F85 /* Assets.xcassets */,
 				E202D3321E2C1CE000CD8F85 /* LaunchScreen.storyboard */,
@@ -122,14 +123,38 @@
 		E2CA86A91E2CC76300B36F0A /* model */ = {
 			isa = PBXGroup;
 			children = (
+				E2D79DD41E31039E005E0AA8 /* collectionView */,
 				E28369851E2E547300410414 /* Answers.swift */,
-				E2CA86A71E2CC52100B36F0A /* MyTableViewCell.swift */,
 				E2CA86B01E2CFF4600B36F0A /* Subject.swift */,
+				E2CA86A71E2CC52100B36F0A /* MyTableViewCell.swift */,
 				E28369891E2E5B7D00410414 /* MyAnswers.swift */,
 				E28369931E2F84D100410414 /* Courses.swift */,
 				E28369951E2FB00500410414 /* Texts.swift */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		E2D79DCD1E30BD98005E0AA8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E202D32B1E2C1CE000CD8F85 /* ViewController.swift */,
+				E28369911E2F716E00410414 /* LearningView.swift */,
+				E283698F1E2F5EED00410414 /* Login.swift */,
+				E2CA86AE1E2CF41100B36F0A /* ResultsViewController.swift */,
+				E2CA86AA1E2CC7AA00B36F0A /* TestsViewController.swift */,
+				E28369971E2FB89300410414 /* Verification.swift */,
+				E2D79DCB1E30BD90005E0AA8 /* CollectionViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E2D79DD41E31039E005E0AA8 /* collectionView */ = {
+			isa = PBXGroup;
+			children = (
+				E2D79DD01E30C73A005E0AA8 /* Course.swift */,
+				E2D79DD21E30ECE7005E0AA8 /* CourseCollectionViewCell.swift */,
+			);
+			name = collectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +283,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E28369981E2FB89300410414 /* Verification.swift in Sources */,
+				E2D79DD31E30ECE7005E0AA8 /* CourseCollectionViewCell.swift in Sources */,
 				E28369861E2E547300410414 /* Answers.swift in Sources */,
 				E202D32C1E2C1CE000CD8F85 /* ViewController.swift in Sources */,
 				E202D32A1E2C1CE000CD8F85 /* AppDelegate.swift in Sources */,
+				E2D79DCC1E30BD90005E0AA8 /* CollectionViewController.swift in Sources */,
 				E28369941E2F84D100410414 /* Courses.swift in Sources */,
 				E283698A1E2E5B7D00410414 /* MyAnswers.swift in Sources */,
 				E2CA86AB1E2CC7AA00B36F0A /* TestsViewController.swift in Sources */,
@@ -268,6 +295,7 @@
 				E2CA86AF1E2CF41100B36F0A /* ResultsViewController.swift in Sources */,
 				E28369901E2F5EED00410414 /* Login.swift in Sources */,
 				E2CA86B11E2CFF4600B36F0A /* Subject.swift in Sources */,
+				E2D79DD11E30C73A005E0AA8 /* Course.swift in Sources */,
 				E28369921E2F716E00410414 /* LearningView.swift in Sources */,
 				E2CA86A81E2CC52100B36F0A /* MyTableViewCell.swift in Sources */,
 			);

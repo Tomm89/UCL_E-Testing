@@ -18,7 +18,7 @@ class TestsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var answers = [Answers]()
     var answersArray: [String] = ["Odpověď 1", "Odpověď 2", "Odpověď 3", "Odpověď 4"]
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -75,6 +75,8 @@ class TestsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "answers", for: indexPath as IndexPath) as! MyAnswers
+        
+        
         
         let answers = self.answers[indexPath.row]
         cell.Label?.text = answers.name
