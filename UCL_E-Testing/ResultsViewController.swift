@@ -30,26 +30,9 @@ class ResultsViewController: UIViewController {
         self.view.clipsToBounds = true
         self.view.center = view.center
         
-        button.backgroundColor = UIColor.clear
-        button.layer.cornerRadius = 25
-        button.layer.borderWidth = 2
-        self.button.layer.borderColor = UIColor(red:49/255.0, green:177/255.0, blue:221/255.0, alpha: 1.0).cgColor
+        
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    @IBAction func Exit(_ sender: Any) {
-        exit(0)
-    }
 }

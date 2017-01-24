@@ -30,12 +30,12 @@ class VerificationConroller: UIViewController, UITableViewDelegate, UITableViewD
         self.view.center = view.center
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
-        loadSampleAnswers()
+        //loadSampleAnswers()
         
         // Do any additional setup after loading the view.
     }
     
-    func loadSampleAnswers() {
+ /*   func loadSampleAnswers() {
         
         var sampleAnswers: Answers
         
@@ -43,7 +43,7 @@ class VerificationConroller: UIViewController, UITableViewDelegate, UITableViewD
             sampleAnswers = Answers(name: answersArray[x])
             answers.append(sampleAnswers)
         }
-    }
+    }  */
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

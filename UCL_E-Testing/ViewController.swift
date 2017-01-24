@@ -81,8 +81,4 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
-    @IBAction func Exit(_ sender: Any) {
-        exit(0)
-    }
-    
 }

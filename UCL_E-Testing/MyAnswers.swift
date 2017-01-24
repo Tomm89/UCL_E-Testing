@@ -14,10 +14,6 @@ class MyAnswers: UITableViewCell {
     @IBOutlet weak var Label: UILabel!
     @IBOutlet weak var myCheckImage: UIImageView!
     
-    override func awakeFromNib() {
-        
-        super.awakeFromNib()
-        // Initialization code
-    }
+    var AnswersForRow: String?
 
 }

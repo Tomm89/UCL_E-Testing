@@ -13,13 +13,13 @@
 		E202D3311E2C1CE000CD8F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E202D3301E2C1CE000CD8F85 /* Assets.xcassets */; };
 		E202D3341E2C1CE000CD8F85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E202D3321E2C1CE000CD8F85 /* LaunchScreen.storyboard */; };
 		E223E0A41E2DF7C300A0A633 /* UCL_Logo_var1_clr1_RGB.png in Resources */ = {isa = PBXBuildFile; fileRef = E223E0A31E2DF7C300A0A633 /* UCL_Logo_var1_clr1_RGB.png */; };
+		E22889ED1E322C0500AA3E62 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E22889EC1E322C0500AA3E62 /* GoogleService-Info.plist */; };
 		E28369861E2E547300410414 /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28369851E2E547300410414 /* Answers.swift */; };
 		E283698A1E2E5B7D00410414 /* MyAnswers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28369891E2E5B7D00410414 /* MyAnswers.swift */; };
 		E28369901E2F5EED00410414 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E283698F1E2F5EED00410414 /* Login.swift */; };
 		E28369921E2F716E00410414 /* LearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28369911E2F716E00410414 /* LearningView.swift */; };
 		E28369941E2F84D100410414 /* Courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28369931E2F84D100410414 /* Courses.swift */; };
 		E28369961E2FB00500410414 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28369951E2FB00500410414 /* Texts.swift */; };
-		E28369981E2FB89300410414 /* Verification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28369971E2FB89300410414 /* Verification.swift */; };
 		E2CA86A81E2CC52100B36F0A /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA86A71E2CC52100B36F0A /* MyTableViewCell.swift */; };
 		E2CA86AB1E2CC7AA00B36F0A /* TestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA86AA1E2CC7AA00B36F0A /* TestsViewController.swift */; };
 		E2CA86AF1E2CF41100B36F0A /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA86AE1E2CF41100B36F0A /* ResultsViewController.swift */; };
@@ -41,13 +41,13 @@
 		E202D3331E2C1CE000CD8F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E202D3351E2C1CE000CD8F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E223E0A31E2DF7C300A0A633 /* UCL_Logo_var1_clr1_RGB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UCL_Logo_var1_clr1_RGB.png; path = ../../UCL_Logo_var1_clr1_RGB.png; sourceTree = "<group>"; };
+		E22889EC1E322C0500AA3E62 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E28369851E2E547300410414 /* Answers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Answers.swift; path = ../Answers.swift; sourceTree = "<group>"; };
 		E28369891E2E5B7D00410414 /* MyAnswers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAnswers.swift; sourceTree = "<group>"; };
 		E283698F1E2F5EED00410414 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		E28369911E2F716E00410414 /* LearningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningView.swift; sourceTree = "<group>"; };
 		E28369931E2F84D100410414 /* Courses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Courses.swift; sourceTree = "<group>"; };
 		E28369951E2FB00500410414 /* Texts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
-		E28369971E2FB89300410414 /* Verification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Verification.swift; sourceTree = "<group>"; };
 		E2CA86A71E2CC52100B36F0A /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		E2CA86AA1E2CC7AA00B36F0A /* TestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestsViewController.swift; sourceTree = "<group>"; };
 		E2CA86AE1E2CF41100B36F0A /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +115,7 @@
 				E202D3301E2C1CE000CD8F85 /* Assets.xcassets */,
 				E202D3321E2C1CE000CD8F85 /* LaunchScreen.storyboard */,
 				E223E0A31E2DF7C300A0A633 /* UCL_Logo_var1_clr1_RGB.png */,
+				E22889EC1E322C0500AA3E62 /* GoogleService-Info.plist */,
 				E202D3351E2C1CE000CD8F85 /* Info.plist */,
 			);
 			path = "UCL_E-Testing";
@@ -142,7 +143,6 @@
 				E283698F1E2F5EED00410414 /* Login.swift */,
 				E2CA86AE1E2CF41100B36F0A /* ResultsViewController.swift */,
 				E2CA86AA1E2CC7AA00B36F0A /* TestsViewController.swift */,
-				E28369971E2FB89300410414 /* Verification.swift */,
 				E2D79DCB1E30BD90005E0AA8 /* CollectionViewController.swift */,
 			);
 			name = Controllers;
@@ -222,6 +222,7 @@
 			files = (
 				E202D3341E2C1CE000CD8F85 /* LaunchScreen.storyboard in Resources */,
 				E223E0A41E2DF7C300A0A633 /* UCL_Logo_var1_clr1_RGB.png in Resources */,
+				E22889ED1E322C0500AA3E62 /* GoogleService-Info.plist in Resources */,
 				E202D3311E2C1CE000CD8F85 /* Assets.xcassets in Resources */,
 				E202D32F1E2C1CE000CD8F85 /* Main.storyboard in Resources */,
 			);
@@ -282,7 +283,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E28369981E2FB89300410414 /* Verification.swift in Sources */,
 				E2D79DD31E30ECE7005E0AA8 /* CourseCollectionViewCell.swift in Sources */,
 				E28369861E2E547300410414 /* Answers.swift in Sources */,
 				E202D32C1E2C1CE000CD8F85 /* ViewController.swift in Sources */,
