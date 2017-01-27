@@ -20,6 +20,7 @@
 		E28369921E2F716E00410414 /* LearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28369911E2F716E00410414 /* LearningView.swift */; };
 		E28369941E2F84D100410414 /* Courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28369931E2F84D100410414 /* Courses.swift */; };
 		E28369961E2FB00500410414 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28369951E2FB00500410414 /* Texts.swift */; };
+		E2A25D6C1E38B12600AFC107 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A25D6B1E38B12600AFC107 /* Questions.swift */; };
 		E2CA86A81E2CC52100B36F0A /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA86A71E2CC52100B36F0A /* MyTableViewCell.swift */; };
 		E2CA86AB1E2CC7AA00B36F0A /* TestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA86AA1E2CC7AA00B36F0A /* TestsViewController.swift */; };
 		E2CA86AF1E2CF41100B36F0A /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA86AE1E2CF41100B36F0A /* ResultsViewController.swift */; };
@@ -48,6 +49,7 @@
 		E28369911E2F716E00410414 /* LearningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningView.swift; sourceTree = "<group>"; };
 		E28369931E2F84D100410414 /* Courses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Courses.swift; sourceTree = "<group>"; };
 		E28369951E2FB00500410414 /* Texts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
+		E2A25D6B1E38B12600AFC107 /* Questions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		E2CA86A71E2CC52100B36F0A /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		E2CA86AA1E2CC7AA00B36F0A /* TestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestsViewController.swift; sourceTree = "<group>"; };
 		E2CA86AE1E2CF41100B36F0A /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
@@ -121,14 +123,23 @@
 			path = "UCL_E-Testing";
 			sourceTree = "<group>";
 		};
+		E21CBCEF1E39EA8300D41EC1 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E28369851E2E547300410414 /* Answers.swift */,
+				E2A25D6B1E38B12600AFC107 /* Questions.swift */,
+				E28369891E2E5B7D00410414 /* MyAnswers.swift */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
 		E2CA86A91E2CC76300B36F0A /* model */ = {
 			isa = PBXGroup;
 			children = (
 				E2D79DD41E31039E005E0AA8 /* collectionView */,
-				E28369851E2E547300410414 /* Answers.swift */,
+				E21CBCEF1E39EA8300D41EC1 /* Tests */,
 				E2CA86B01E2CFF4600B36F0A /* Subject.swift */,
 				E2CA86A71E2CC52100B36F0A /* MyTableViewCell.swift */,
-				E28369891E2E5B7D00410414 /* MyAnswers.swift */,
 				E28369931E2F84D100410414 /* Courses.swift */,
 				E28369951E2FB00500410414 /* Texts.swift */,
 			);
@@ -288,6 +299,7 @@
 				E202D32C1E2C1CE000CD8F85 /* ViewController.swift in Sources */,
 				E202D32A1E2C1CE000CD8F85 /* AppDelegate.swift in Sources */,
 				E2D79DCC1E30BD90005E0AA8 /* CollectionViewController.swift in Sources */,
+				E2A25D6C1E38B12600AFC107 /* Questions.swift in Sources */,
 				E28369941E2F84D100410414 /* Courses.swift in Sources */,
 				E283698A1E2E5B7D00410414 /* MyAnswers.swift in Sources */,
 				E2CA86AB1E2CC7AA00B36F0A /* TestsViewController.swift in Sources */,

@@ -11,9 +11,7 @@ import UIKit
 class MyAnswers: UITableViewCell {
 
 
-    @IBOutlet weak var Label: UILabel!
+    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var myCheckImage: UIImageView!
-    
-    var AnswersForRow: String?
 
 }

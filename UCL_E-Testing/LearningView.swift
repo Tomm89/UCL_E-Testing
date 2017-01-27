@@ -39,14 +39,14 @@ class LearningView: UIViewController, iCarouselDataSource, iCarouselDelegate {
         //self.navigationItem.title = subjects[1].name
         
         carousel.type = .coverFlow
-        loadItems()
-        loadtext()
+       // loadItems()
+      //  loadtext()
         
     }
     
         // Do any additional setup after loading the view.
     
-    func loadItems() {
+  /*  func loadItems() {
         
         var samples: Courses
         
@@ -66,7 +66,7 @@ class LearningView: UIViewController, iCarouselDataSource, iCarouselDelegate {
         }
         
         
-    }
+    }  */
     
     func numberOfItems(in carousel: iCarousel) -> Int {
         return items.count //+text.count

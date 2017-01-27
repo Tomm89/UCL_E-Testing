@@ -10,18 +10,20 @@ import UIKit
 import FirebaseDatabase
 import Firebase
 
-class TestsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class TestsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate {
     
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var greenView: UIView!
     
-    //var numberToDisplay = 0
     
+    var questions = [Questions]()
+
     var answers = [Answers]()
-    //var answersArray = [String]() //= ["Odpověď 1", "Odpověď 2", "Odpověď 3", "Odpověď 4"]
     
     var ref: FIRDatabaseReference!
-    var databaseHandler: FIRDatabaseHandle?
+    //var databaseHandler: FIRDatabaseHandle?
     var refHandle: UInt!
     
     override func viewDidLoad() {
@@ -33,29 +35,12 @@ class TestsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.view.clipsToBounds = true
         self.view.center = view.center
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        self.textView.text = ""
         
-       // loadSampleAnswers()
-        
-        ref = FIRDatabase.database().reference()
-        
-        fetchAnswers()
 
-        
-        // "events" is the root, and "title" is the key for the data I wanted to build an array with.
-       
-      /*  let answerRef = self.ref.child("Anawers")
-        answerRef.queryOrdered(byChild: "Answer1").observe(.childAdded, with: { (snapshot) in
-            
-            if let dictionary = snapshot.value as? String {
-                self.answersArray.append(dictionary)
-                
-                // Double-check that the correct data is being pulled by printing to the console.
-                print("\(self.answersArray)")
-                
-                // async download so need to reload the table that this data feeds into.
-                self.tableView.reloadData()
-            }
-        }) */
+        ref = FIRDatabase.database().reference()
+        fetchAnswers()
+        fetchQuestions()
         
     }
     
@@ -70,6 +55,10 @@ class TestsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }  */
     
     
+    func tapped(){
+        greenView.removeFromSuperview()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return answers.count
@@ -78,15 +67,28 @@ class TestsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.dequeueReusableCell(withIdentifier: "answers", for: indexPath as IndexPath) as! MyAnswers
         
-        //cell.myCheckImage.accessibilityElementsHidden = false
+        cell.myCheckImage.isHidden = false
+        
+        //getting the index path of selected row
+        let indexPath = tableView.indexPathForSelectedRow
+        
+        //getting the current cell from the index path
+        let currentCell = tableView.cellForRow(at: indexPath!)! as UITableViewCell
+        
+        //getting the text of that cell
+        let currentItem = currentCell.textLabel!.text
+        
+        let alertController = UIAlertController(title: "Odpověděl/a jste správně", message: "Je vybráno " + currentItem! , preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "Pokračovat", style: .default, handler: nil)
+        alertController.addAction(defaultAction)
+        
+        present(alertController, animated: true, completion: nil)
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "answers")   //tableView.dequeueReusableCell(withIdentifier: "answers", for: indexPath as IndexPath)
         
-        //let answers = self.answers[indexPath.row]
-        
-        //cell.textLabel?.text = answers[indexPath.row].provider
         cell.textLabel?.text = answers[indexPath.row].name
         return cell
     }
@@ -105,6 +107,24 @@ class TestsViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 DispatchQueue.main.async {
                 self.tableView.reloadData()
                 }
+            }
+        })
+    }
+    
+    func fetchQuestions() {
+        self.refHandle = ref.child("Questions").observe(.childAdded, with: { (snapshot) in
+            if let Dictionary = snapshot.value as? [String: AnyObject] {
+                
+                print(Dictionary)
+                
+                let question = Questions()
+                
+                question.setValuesForKeys(Dictionary)
+                self.questions.append(question)
+                DispatchQueue.main.async {
+                    self.textView.text = self.questions[0].name
+                }
+                
             }
         })
     }

@@ -21,18 +21,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UCL_Logo_var1_clr1_RGB.png" translatesAutoresizingMaskIntoConstraints="NO" id="PJM-tN-FiI">
-                                <rect key="frame" x="0.0" y="243" width="375" height="180"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UCL_Logo_var1_clr1_RGB.png" translatesAutoresizingMaskIntoConstraints="NO" id="rqj-zv-182">
+                                <rect key="frame" x="0.0" y="228" width="375" height="211"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="PJM-tN-FiI" secondAttribute="trailing" id="FRL-yX-f8W"/>
-                            <constraint firstItem="PJM-tN-FiI" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="HPC-G1-FQO"/>
-                            <constraint firstItem="PJM-tN-FiI" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="223" id="VFB-ms-g79"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="PJM-tN-FiI" secondAttribute="bottom" constant="244" id="fCO-du-8mI"/>
-                            <constraint firstItem="PJM-tN-FiI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="oQS-5k-AYG"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

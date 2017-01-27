@@ -10,6 +10,9 @@ import UIKit
 
 class CourseCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var labelName: UILabel!
+    @IBOutlet weak var labelText: UITextView!
+    
     var courses: Courses!  {
         
         didSet {
@@ -20,7 +23,7 @@ class CourseCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var courseTitle: UILabel!
     
     func updateUI () {
-        //courseTitle?.text! = course.title
+        courseTitle?.text! = courses.name!
         
     }
     
