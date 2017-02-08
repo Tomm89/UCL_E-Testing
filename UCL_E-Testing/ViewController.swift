@@ -10,10 +10,17 @@ import UIKit
 import Foundation
 import Firebase
 
+struct postStruct {
+    var image : UIImage!
+    var name : String!
+}
+
+//var heightOfHeader: CGFloat = 60
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet var tableView: UITableView!
     
     @IBAction func course(sender: UIButton) {
         _ = sender.tag
@@ -22,6 +29,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var subjects = [Subject]()
     var array: [String] = ["Matematika", "Lineární algebra", "Alogritmy", "Programování", "Java", "C#", "C++"]
+    
+    var arrayOfPosts = [postStruct]()
 
     
     override func viewDidLoad() {
@@ -34,6 +43,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.view.clipsToBounds = true
         self.view.center = view.center
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        
+        arrayOfPosts = [postStruct.init(image: #imageLiteral(resourceName: "school"), name: "Matematika"), postStruct.init(image: #imageLiteral(resourceName: "school"), name: "Lineární algebra"),postStruct.init(image: #imageLiteral(resourceName: "school"), name: "Alogritmy"), postStruct.init(image: #imageLiteral(resourceName: "school"), name: "Programování"), postStruct.init(image: #imageLiteral(resourceName: "school"), name: "Java"), postStruct.init(image: #imageLiteral(resourceName: "school"), name: "C#"), postStruct.init(image: #imageLiteral(resourceName: "school"), name: "C++")]
+        
         
         loadSampleSubjects()
 
@@ -60,16 +72,29 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
         cell.backgroundColor = UIColor(white: 1, alpha: 0.5)
 
-        let subject = subjects[indexPath.row]
+        //let subject = subjects[indexPath.row]
         
         // set the text from the data model
-        //cell.textLabel?.text = subjects[indexPath.row].name
+        cell.textLabel?.text = subjects[indexPath.row].name
         
         cell.testsButton?.tag = indexPath.row
-        cell.subjectLabel?.text = subject.name
+        //cell.subjectLabel?.text = subject.name
         
         return cell
     }
+    
+ /*   func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return CGFloat(heightOfHeader)
+    } */
+    
+ /*   func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = Bundle.main.loadNibNamed("HeaderView", owner: self, options: nil)?.first as! HeaderView
+        
+        headerView.headerLabel.text = arrayOfPosts[section].name
+        headerView.picture.image = arrayOfPosts[section].image
+        
+        return headerView
+    }  */
     
     func loadSampleSubjects() {
         

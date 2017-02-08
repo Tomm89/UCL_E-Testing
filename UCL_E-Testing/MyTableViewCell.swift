@@ -12,7 +12,7 @@ import UIKit
 class MyTableViewCell: UITableViewCell {
     
 
-    @IBOutlet weak var subjectLabel: UILabel!
+    @IBOutlet var label: UILabel!
     @IBOutlet weak var testsButton: UIButton!
     @IBOutlet weak var resultsButton: UIButton!
 

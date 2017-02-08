@@ -11,5 +11,6 @@ import UIKit
 class Questions: NSObject {
     
     var name: String?
+    var answers: [Answers] = []
 
 }

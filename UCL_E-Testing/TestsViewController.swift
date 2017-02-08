@@ -19,8 +19,9 @@ class TestsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     
     var questions = [Questions]()
-
     var answers = [Answers]()
+    
+   // var test = Array(repeating:[Answers](),count:5)
     
     var ref: FIRDatabaseReference!
     //var databaseHandler: FIRDatabaseHandle?
@@ -51,6 +52,17 @@ class TestsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         for x in 0...answersArray.count-1 {
             sampleAnswers = Answers(name: answersArray[x])
             answers.append(sampleAnswers)
+        }
+    }  */
+    
+    
+/*    func loadAnswers() {
+        
+        for x in 0...5 {
+            for y in 0...test[x].count {
+                let z = String(test[x][y].name!)
+                answers[x][z] = answers[x][z] + 1
+            }
         }
     }  */
     
@@ -110,6 +122,7 @@ class TestsViewController: UIViewController, UITableViewDelegate, UITableViewDat
             }
         })
     }
+    
     
     func fetchQuestions() {
         self.refHandle = ref.child("Questions").observe(.childAdded, with: { (snapshot) in
